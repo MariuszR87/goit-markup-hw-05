@@ -440,6 +440,94 @@ padding:20px 24px;
 .team-item {
   flex-basis: calc((100% - 90px) / 4);
 } 
+/* Zadanie 5 chat, stiki */
+.chat-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.section-title {
+  position: sticky;
+  top: 10px;
+
+  margin: 0;
+  padding: 16px;
+  background-color: #ccc;
+  text-align: center;
+  text-transform: uppercase;
+
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.section-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.test-relative {
+  position: relative;
+  top: 120px;
+  left: 120px;
+  border: solid black;
+  z-index: 3;
+  background-color: navy;
+}
+
+.test-relative2 {
+  position: relative;
+  top: 100px;
+  left: -320px;
+  border: solid black;
+  z-index: 2;
+  background-color: var(--hover-color);
+}
+
+.cointainer-slim{
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-text-scroll{
+  overflow: scroll;
+  height: 200px;
+}
+
+.hidden-element1{
+  overflow: hidden;
+}
+.box-with-overlay {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+}
+
+
+
 
  /* FOOTER */
 .footer{
