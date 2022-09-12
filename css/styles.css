@@ -512,10 +512,16 @@ padding:20px 24px;
 .hidden-element1{
   overflow: hidden;
 }
+
+
+/* Technocrack wyskakujące niebiedskie okienko */
 .box-with-overlay {
   position: relative;
+  overflow: hidden;
 }
-
+.box-with-overlay:hover .overlay{
+  transform: translateY(0);
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -524,6 +530,19 @@ padding:20px 24px;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
+  transform: translateY(100%);
+  transition: transform 1s ease;
+}
+.overlay-text
+{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 49px 45px 49px 24px;
+  color: var(--white);
 }
 
 
