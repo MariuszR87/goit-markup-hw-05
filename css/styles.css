@@ -248,8 +248,8 @@ cursor: pointer;
   display: flex;
 }
 .list-one-line{
-  justify-content: center;
   display: flex;
+  justify-content: center;
   column-gap: 30px;
 }
 .list-one-line-6element{
@@ -440,6 +440,10 @@ padding:20px 24px;
 .team-item {
   flex-basis: calc((100% - 90px) / 4);
 } 
+
+
+
+
 /* Zadanie 5 chat, stiki */
 .chat-button {
   position: fixed;
@@ -511,6 +515,27 @@ padding:20px 24px;
 .hidden-element1{
   overflow: hidden;
 }
+
+.box-relative{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+
+ }
+
+ .title-on-image{
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  margin-bottom: 0;
+  bottom: 0;
+  color: var(--white);
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+ }
 
 
 /* Technocrack wyskakujące niebiedskie okienko */
