@@ -34,6 +34,8 @@ figure {
   padding: 0;
 }
 
+
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--font-color-main);
@@ -62,8 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  height: 80px;
 }
 
 .logo-section{
@@ -135,6 +136,9 @@ gap: 46px;
 .icon:focus{
   fill: var(--hover-color);
   cursor: pointer;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -144,14 +148,29 @@ gap: 46px;
 }
 
 .active-page {
+  position: relative;
   color: var(--blue);
+  }
+
+  .active-page::after{
+position: absolute;
+content: "";
+width: 100%;
+bottom: -33px;
+left: 0px;
+border-bottom: 4px solid var(--hover-color);
+border-radius: 2px;
+margin-bottom: 0;
   }
 
 .links:hover,
 .links:focus,
 .links-contact:hover,
 .links-contact:focus {
-color: var(--hover-color)
+color: var(--hover-color);
+transition-property: color;
+transition-duration:  250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn{
@@ -185,6 +204,9 @@ padding-top: 16px;
 .social-links-svg:focus{
   background-color: var(--hover-color);
   fill: var(--white);
+  transition-property: color, fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -195,12 +217,18 @@ padding-top: 16px;
 .btn-portfolio:hover,
 .btn-portfolio:focus{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-property: box-shadow;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,btn:focus {
 background-color: var(--hover-color);
 color: var(--white);
 cursor: pointer;
+transition-property: color, background-color;
+transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-box{
@@ -241,6 +269,9 @@ cursor: pointer;
   cursor: pointer;
   /* dodatkowo */
   background-color: darkcyan;
+  transition-property: background-color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* LISTA LOREM IPSUM */
 .list {
@@ -272,6 +303,8 @@ cursor: pointer;
 .list-item-one-line-6element:focus{
   fill: var(--hover-color);
   border-color: var(--hover-color);
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .index-not-white-background{
@@ -435,6 +468,8 @@ padding:20px 24px;
 .li-item-shadow:hover,
 .li-item-shadow:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item {
@@ -621,4 +656,44 @@ padding:20px 24px;
 .social-fotter-links-svg:focus{
   background-color: var(--hover-color);
   fill: var(--white);
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* MODAL */
+.backdrop{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+
+}
+.modal{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--white);
+  cursor:auto;
+}
+.close-btn{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

@@ -57,7 +57,7 @@
         <div class="main-box-background-image">
           <div class="container main-box-container">
             <h1 class="class-h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="main-box-btn" type="button">Zamów usługe</button>
+            <button class="main-box-btn" type="button" data-modal-open>Zamów usługe</button>
           </div>
         </div>
       </section>
@@ -276,8 +276,12 @@
       
     </footer>
   </div>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-btn" data-modal-close>X</button>
+  </div>
+</div>
 
-  
   <script src="./js/modal.js"></script>
   </body>
 </html>
