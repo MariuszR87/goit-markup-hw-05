@@ -575,15 +575,7 @@ padding:20px 24px;
 
 
 
-.close-btn{
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: solid 1px rgba(0, 0, 0, 0.1);
-  cursor: pointer;}
+
 
   /* Zadanie 5 chat, stiki */
 .chat-button {
@@ -716,3 +708,14 @@ padding:20px 24px;
 
 
 }
+
+.close-btn{
+  position: absolute;
+  justify-content: center;
+  top: 6px;
+  right: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;}
