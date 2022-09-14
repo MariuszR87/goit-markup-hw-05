@@ -489,6 +489,7 @@ padding:20px 24px;
   position: relative;
   overflow: hidden;
   height: 294px;
+  /* padding-bottom: 0; */
 }
 .box-with-overlay:hover .overlay{
   transition-property: transform;
