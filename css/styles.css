@@ -147,6 +147,7 @@ gap: 46px;
   margin-right: 50px;
 }
 
+
 .active-page {
   position: relative;
   color: var(--blue);
@@ -487,6 +488,7 @@ padding:20px 24px;
 .box-with-overlay {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 .box-with-overlay:hover .overlay{
   transition-property: transform;
